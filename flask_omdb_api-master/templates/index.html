@@ -1,0 +1,39 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+    <title>OMDB Flask API</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      .container {
+        max-width: 500px;
+        padding-top: 20px;
+      }
+      input {
+        max-width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Omdb api and Flask</h1>
+      <form method="post" action="{{ url_for('api_root') }}">
+        <label for="sentence">Please enter your movie name:</label>
+        <input type="text" name="movie_name" /><br />
+        <input type="submit" />
+      </form>
+      {% if movie_name %}
+        {% if omdb_request.Response == 'False' %}
+        <div id="content">
+          The movie {{movie_name}} can't be found, do another search !
+        {% else %}
+        <div id="content">
+            The movie name is <strong>{{movie_name}}</strong> !
+        </div>
+        <p>Plot : {{omdb_request.Plot}}</p>
+        <p>Released : {{omdb_request.Released}}</p>
+        {% endif %}
+     {% endif %}
+    </div>
+  </div>
+</body>
+</html>
