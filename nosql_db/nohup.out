@@ -1,0 +1,153 @@
+usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir]
+               [--paths] [--json]
+               [subcommand]
+jupyter: error: one of the arguments --version subcommand --config-dir --data-dir --runtime-dir --paths is required
+[I 13:33:31.977 NotebookApp] Serving notebooks from local directory: /Users/kamilabajaria/github/Project02-Movies/nosql
+[I 13:33:31.977 NotebookApp] 0 active kernels 
+[I 13:33:31.977 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=df89258f09ec25e71faa3470a1f998b45a0346ef3e70e8aa
+[I 13:33:31.977 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:33:31.982 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=df89258f09ec25e71faa3470a1f998b45a0346ef3e70e8aa
+[I 13:33:32.944 NotebookApp] Accepting one-time-token-authenticated connection from 127.0.0.1
+[W 13:33:33.280 NotebookApp] 404 GET /apple-touch-icon-precomposed.png (127.0.0.1) 11.21ms referer=None
+[W 13:33:33.287 NotebookApp] 404 GET /apple-touch-icon.png (127.0.0.1) 1.84ms referer=None
+[W 13:33:46.512 NotebookApp] Notebook database_engineering.ipynb is not trusted
+[I 13:33:46.964 NotebookApp] Kernel started: 157be2c6-d71d-4a12-8fb3-db89d3958de7
+[I 13:48:05.321 NotebookApp] Saving file at /database_engineering.ipynb
+[W 13:48:05.322 NotebookApp] Saving untrusted notebook database_engineering.ipynb
+[I 13:52:05.326 NotebookApp] Saving file at /database_engineering.ipynb
+[W 13:52:05.326 NotebookApp] Saving untrusted notebook database_engineering.ipynb
+[I 14:00:14.402 NotebookApp] Saving file at /database_engineering.ipynb
+[W 14:00:14.403 NotebookApp] Saving untrusted notebook database_engineering.ipynb
+[I 14:02:14.379 NotebookApp] Saving file at /database_engineering.ipynb
+[W 14:02:14.380 NotebookApp] Saving untrusted notebook database_engineering.ipynb
+[I 14:04:14.410 NotebookApp] Saving file at /database_engineering.ipynb
+[W 14:04:14.411 NotebookApp] Saving untrusted notebook database_engineering.ipynb
+[I 14:06:14.401 NotebookApp] Saving file at /database_engineering.ipynb
+[W 14:06:14.402 NotebookApp] Saving untrusted notebook database_engineering.ipynb
+[I 14:10:14.468 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:12:14.504 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:12:19.761 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:12:59.191 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:13:14.525 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:13:53.960 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:14:14.471 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:20:18.444 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:22:18.462 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:41:35.863 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:43:35.855 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:45:35.839 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:47:35.883 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:48:19.167 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:49:40.082 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:57:42.008 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:59:02.813 NotebookApp] Saving file at /database_engineering.ipynb
+[I 14:59:48.058 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:10:44.752 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:15:17.337 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:19:17.344 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:21:17.344 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:29:35.285 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:31:45.272 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:38:26.479 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:40:26.500 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:42:26.508 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:44:26.494 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:50:26.489 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:52:26.510 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:54:26.493 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:56:26.521 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:56:40.882 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:58:10.225 NotebookApp] Saving file at /database_engineering.ipynb
+[I 15:58:26.500 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:00:26.531 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:04:31.173 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:06:31.191 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:10:58.527 NotebookApp] Saving file at /database_engineering.ipynb
+[W 16:12:20.651 NotebookApp] IOPub data rate exceeded.
+    The notebook server will temporarily stop sending output
+    to the client in order to avoid crashing it.
+    To change this limit, set the config variable
+    `--NotebookApp.iopub_data_rate_limit`.
+[W 16:12:22.203 NotebookApp] iopub messages resumed
+[I 16:12:44.254 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:16:44.246 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:18:44.227 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:22:44.224 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:24:44.240 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:26:44.272 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:28:44.252 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:30:44.274 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:32:44.270 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:34:44.145 NotebookApp] Saving file at /database_engineering.ipynb
+[W 16:35:35.593 NotebookApp] IOPub data rate exceeded.
+    The notebook server will temporarily stop sending output
+    to the client in order to avoid crashing it.
+    To change this limit, set the config variable
+    `--NotebookApp.iopub_data_rate_limit`.
+[W 16:35:37.377 NotebookApp] iopub messages resumed
+[I 16:36:44.344 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:38:44.152 NotebookApp] Saving file at /database_engineering.ipynb
+[W 16:39:15.333 NotebookApp] IOPub data rate exceeded.
+    The notebook server will temporarily stop sending output
+    to the client in order to avoid crashing it.
+    To change this limit, set the config variable
+    `--NotebookApp.iopub_data_rate_limit`.
+[W 16:39:17.048 NotebookApp] iopub messages resumed
+[I 16:40:44.240 NotebookApp] Saving file at /database_engineering.ipynb
+[I 16:42:25.299 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:20:18.091 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:32:30.676 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:35:30.519 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:37:39.285 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:40:17.353 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:41:46.943 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:48:46.593 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:50:46.583 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:51:41.388 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:52:48.036 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:54:48.040 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:56:48.046 NotebookApp] Saving file at /database_engineering.ipynb
+[I 17:59:45.405 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:00:48.059 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:04:34.184 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:04:49.250 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:05:47.195 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:06:49.255 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:08:49.278 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:09:55.530 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:10:22.213 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:10:43.464 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:10:49.236 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:12:00.527 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:12:49.238 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:12:51.097 NotebookApp] Saving file at /database_engineering.ipynb
+[I 18:13:07.801 NotebookApp] Saving file at /database_engineering.ipynb
+[I 19:02:53.535 NotebookApp] Saving file at /database_engineering.ipynb
+[I 19:04:53.544 NotebookApp] Saving file at /database_engineering.ipynb
+[I 19:47:05.895 NotebookApp] Saving file at /database_engineering.ipynb
+[I 19:49:05.893 NotebookApp] Saving file at /database_engineering.ipynb
+[I 19:53:05.898 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:06:00.403 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:08:00.392 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:10:00.404 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:12:00.407 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:14:00.405 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:16:00.398 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:18:10.406 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:22:25.419 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:24:25.427 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:30:31.852 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:32:31.874 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:36:31.882 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:38:41.850 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:40:41.870 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:47:19.153 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:49:19.171 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:51:19.154 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:53:19.175 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:57:19.199 NotebookApp] Saving file at /database_engineering.ipynb
+[I 20:59:19.239 NotebookApp] Saving file at /database_engineering.ipynb
