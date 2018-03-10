@@ -5,7 +5,6 @@ function init() {
       width: 500
     };
    
-    initialSample="BB_940";
     moviesURL="https://m787rp1nna.execute-api.us-west-1.amazonaws.com/prod/queryTopGrossingMovies";
     
     var xhttp = new XMLHttpRequest();
