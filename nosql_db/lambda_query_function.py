@@ -27,38 +27,44 @@ def lambda_handler(event, context):
 
     response = table.scan(
         FilterExpression=fe,
-        ProjectionExpression=pe
+        ProjectionExpression=pe,
+        Limit=50
        )
-       
-    count=0
             
     resultlist=[]
+    ids=[]
+    titles=[]
+    revenues=[]
+    infos=[]
 
     for i in response['Items']:
-        #print(json.dumps(i, cls=DecimalEncoder))
-        #print(json.dumps(i['info'], cls=DecimalEncoder))
         info = json.loads(i['info'])
+        title = info['original_title']
         myid = int(i['id'])
         revenue = int(i['revenue'])
-        print(myid, revenue, info)
-        resultlist.extend((myid, revenue, info))
-        count=count+1
+        ids.append(myid)
+        titles.append(title)
+        revenues.append(revenue)
+        infos.append(info)
 
     while 'LastEvaluatedKey' in response:
         response = table.scan(
             ProjectionExpression=pe,
             FilterExpression=fe,
-           ExclusiveStartKey=response['LastEvaluatedKey']
+            ExclusiveStartKey=response['LastEvaluatedKey'],
+            Limit=50
             )
 
         for i in response['Items']:
-            #print(json.dumps(i, cls=DecimalEncoder))
-            #print(json.dumps(i['info'], cls=DecimalEncoder))
             info = json.loads(i['info'])
+            title = info['original_title']
             myid = int(i['id'])
             revenue = int(i['revenue'])
-            print(myid, revenue, info)
-            resultlist.extend((myid, revenue, info))
-            count=count+1
+            ids.append(myid)
+            titles.append(title)
+            revenues.append(revenue)
+            infos.append(info)
             
+    resultlist=[ids, titles, revenues, infos]
+    jsonlist=json.dumps(resultlist)        
     return(resultlist)

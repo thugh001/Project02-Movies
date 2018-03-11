@@ -2,7 +2,7 @@ function init() {
 
     var layout = {
       height: 500,
-      width: 500
+      width: 1000
     };
    
     moviesURL="https://m787rp1nna.execute-api.us-west-1.amazonaws.com/prod/queryTopGrossingMovies";
@@ -12,6 +12,17 @@ function init() {
     xhttp.send();
     
     var myArray = JSON.parse(xhttp.responseText);
+    
+    var labels = myArray[1];
+    var values = myArray[2];
+    
+    var data = [{
+        x: labels,
+        y: values,
+        type: 'bar'
+        }];
+
+    Plotly.newPlot('bar1', data);
     
     /*var labels = myArray.samples.otu_ids.slice(0,9);
     var data_points = myArray.samples.sample_values.slice(0,9);
