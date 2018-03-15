@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movie Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="index7.css"/>
+</head>
+<body>
+
+<!--NAV Bar Section -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">UCI Data Analytics</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index">Summary</a></li>
+      <li><a href="Process.html">Process Flow</a></li>
+      <li><a href="Explore.html">Explore Dataset</a></li>
+      <li><a href="Analytics.html">Movie Analytics</a></li>
+      <li><a href="Search.html">Movie Search</a></li>
+    </ul>
+  </div>
+</nav>
+<!--End of NAV Bar Section -->
+
+<!--Kamila's interactive movie revenue chart-->
+    <div class="container-fluid text-center">    
+      <div class="row content">
+         <div class="col-sm-12 text-center"> 
+            <h2>Movies by Revenue</h2>
+            <p>Hover over interactive chart to see revenue for the top 100 grossing movies</p>
+            <div id="bar1"></div>
+        </div>
+      </div>
+    </div>
+<hr>
+<!--End of Kamila's interactive movie revenue chart-->   
+
+<!--Tashia's interactive movie revenue chart-->
+    <div class="container-fluid text-center">    
+      <div class="row content">
+         <div class="col-sm-12 text-center"> 
+            <h2>Movie Budget vs. Revenue</h2>
+            <p>Comparison of budget vs. revenue for the top 100 grossing movies</p>
+    <div>
+      <div>
+        <button onclick="loadData()">Load Data into Chart</button>
+      </div>
+      <div id='loader'></div>
+        <br/>
+      <div id="graphDiv">
+      </div>
+    </div>
+  </div>
+ </div>
+ </div> 
+<!--End of Tashia's interactive movie revenue chart-->        
+
+<script type="text/javascript" src="charts.js"></script>
+<script type="text/javascript" src="movies.js"></script>
+
+</body>
+
+<footer class="container-fluid text-center">
+  <p>UCI Data Analytics 2018</p>
+</footer>
+
+</html>
+
+
+
+
+
+
