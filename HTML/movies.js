@@ -54,7 +54,7 @@
 			  name: 'Budget',
 			  type: 'bar',
 			   marker: {
-    			color: 'rgb(204,204,204)',
+    			color: 'blue',
     			opacity: 0.8,
   				}
 			};
@@ -65,7 +65,7 @@
 			  name: 'Revenue',
 			  type: 'bar', 
 			  marker: {
-    			color: 'rgb(49,130,189)',
+    			color: 'orange',
     			opacity: 0.8
   				}
 			};
