@@ -52,14 +52,22 @@
 			  x: xTitle,
 			  y: yBudget,
 			  name: 'Budget',
-			  type: 'bar'
+			  type: 'bar',
+			   marker: {
+    			color: 'rgb(204,204,204)',
+    			opacity: 0.8,
+  				}
 			};
 
 			var trace2 = {
 			  x: xTitle,
 			  y: yRevenue,
 			  name: 'Revenue',
-			  type: 'bar'
+			  type: 'bar', 
+			  marker: {
+    			color: 'rgb(49,130,189)',
+    			opacity: 0.8
+  				}
 			};
 
 			var data = [trace1, trace2];
