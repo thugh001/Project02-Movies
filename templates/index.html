@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movie Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}"/>
+</head>
+<body>
+
+<!--NAV Bar Section -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">UCI Data Analytics</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/summary">Summary</a></li>
+      <li><a href="/process">Process Flow</a></li>
+      <li><a href="/analytics">Movie Analytics</a></li>
+      <li><a href="/explore">Explore Dataset</a></li>
+      <li><a href="/search">Movie Search</a></li>
+    </ul>
+  </div>
+</nav>
+<!--End of NAV Bar Section -->
+
+<div class="col-sm-12 text-left">
+      <br> 
+      <h2>Movie Explorer: Explore The Movie Dataset, Review Movie Analytics, Search For Movie Information, And More!</h2>
+      <hr>
+    <br>
+    </div>
+
+<div class="col-sm-4 text-left">
+      <p class="lead text-left">Project Group: Kamila Bajaria, Negin Nickparsa, Tony Fernandez, Tashia Hughes</p> 
+      <br>
+      <p class="lead text-left">The dataset used for this visualization comes from Kaggle and IMDB. The Kaggle metadata.csv file contains 45,000 movies released on or before July 2017. Data points include budget, revenue, release dates, languages, and more. The IMDB data was joined with the IMDB ID from Kaggle to pull in film location. </p> 
+      <br>
+      <p class="lead text-left">This dashboard will allow you to visualize and interact with the dataset, compare revenue for the 100 highest grossing movies, and interact with a leaflet map to review the location where a movie was filmed. </p> 
+</div>
+
+<!--Placeholder for now playing movie, webscraping, or other ideas -->
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="container-fluid text-center">    
+      <div class="row content">
+         <div class="col-sm-8 text-center"> 
+              <div class = "media">
+              <div class = "media-center">
+                  <img class = "media object" src="{{url_for ('static', filename='Black Panther.png')}}" width="800" height="600">
+              </div> 
+        </div>
+      </div>
+    </div>
+</div>
+<!--Placeholder for now playing movie, webscraping, or other ideas -->
+
+</body>
+
+<footer class="container-fluid text-center">
+  <p>UCI Data Analytics 2018</p>
+</footer>
+
+</html>
+
+
+
+
+
+
+
