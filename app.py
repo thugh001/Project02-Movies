@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template,request,session
+from flask import Flask, jsonify, render_template,request,session, redirect, url_for, request
 import googlemaps
 import requests
 import json
@@ -11,7 +11,7 @@ def index():
     if request.method == "POST":
         movie = request.form["movie_id"]
         session["movie_id"] = movie
-        return render_template('Search.html',movie_id=movie)
+        return redirect(url_for('search', movie_id=movie))
     return render_template('index.html')
 
 @app.route("/summary")
@@ -57,6 +57,7 @@ def about():
     print("WORKS!!!")
     print(parameters)
     print(jsonify(parameters))
+    print("DONE!!!")
     return jsonify(parameters)
 
 # 4. Define main behavior
