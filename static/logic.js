@@ -1,14 +1,21 @@
 
-  // Use a request to grab the json data needed for all charts
+
+console.log("I AM WORKING !!!!!");
+console.log("I AM WORKING !!!!!");
+console.log("I AM WORKING !!!!!");
+
+// Use a request to grab the json data needed for all charts
+
 d3.json('/movie', function(sampleData) {
       console.log(sampleData[6]);
        var myMap = L.map("map", {
         center: [sampleData[4].lat, sampleData[4].lng],
-        zoom: 13
+        zoom: 10
       });
 
 // Add a tile layer (the background map image) to our map
 // We use the addTo method to add objects to our map
+
 L.tileLayer(
   "https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?" +
     "access_token=pk.eyJ1Ijoia2pnMzEwIiwiYSI6ImNpdGRjbWhxdjAwNG0yb3A5b21jOXluZTUifQ." +
@@ -28,6 +35,3 @@ marker.bindPopup("Movie Name:"+sampleData[0]+"<img src='"+sampleData[6]+"'>");
   
   
     });
-
-
-

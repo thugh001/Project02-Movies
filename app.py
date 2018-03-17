@@ -54,6 +54,8 @@ def about():
     genres=data_dic['data']['movies'][0]['genres']
     urlPoster=data_dic['data']['movies'][0]['urlPoster']
     parameters=[title,address,releaseDate,year,location,genres,urlPoster]
+    print("WORKS!!!")
+    print(parameters)
     print(jsonify(parameters))
     return jsonify(parameters)
 
