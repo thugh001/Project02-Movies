@@ -12,7 +12,7 @@ def index():
         movie = request.form["movie_id"]
         session["movie_id"] = movie
         return render_template('Search.html',movie_id=movie)
-    return render_template('Search.html')
+    return render_template('index.html')
 
 @app.route("/summary")
 def summary():
