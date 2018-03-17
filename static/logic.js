@@ -6,7 +6,7 @@ console.log("I AM WORKING !!!!!");
 
 // Use a request to grab the json data needed for all charts
 
-d3.json('/movie', function(sampleData) {
+d3.json('https://ucimoviedemo.herokuapp.com/movie', function(sampleData) {
       console.log(sampleData[6]);
        var myMap = L.map("map", {
         center: [sampleData[4].lat, sampleData[4].lng],
