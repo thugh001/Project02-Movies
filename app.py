@@ -14,7 +14,7 @@ def index():
         session["movie_id"] = movie
         print(session)
         return render_template('Search.html',movie_id=movie)
-    return render_template('Search.html')
+    return render_template('index.html')
 
 @app.route("/summary")
 def summary():

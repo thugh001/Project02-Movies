@@ -35,7 +35,7 @@
         height: 8px;
     }
 
-    .map {
-        width: 100%;
+    #map 
+    {
         height: 500px;
     }
