@@ -9,8 +9,10 @@ app.secret_key = "super secret key"
 @app.route("/",methods=["POST","GET"])
 def index():
     if request.method == "POST":
+        print(request.form["movie_id"])
         movie = request.form["movie_id"]
         session["movie_id"] = movie
+        print(session)
         return render_template('Search.html',movie_id=movie)
     return render_template('Search.html')
 
@@ -36,11 +38,20 @@ def search():
 
 @app.route("/movie")
 def about():
-        
+    print(session)
+
+    if session.get('movie_id') is None:
+        print('session is none')
+        return jsonify({})
+    else:
+        print('movie id found in session: ' + session['movie_id'])
+
     url = 'http://api.myapifilms.com/imdb/idIMDB?idIMDB='+session["movie_id"]+'&token=7b2adc1c-9b53-43af-8707-8f5e86330f4b&filmingLocations=2'
+    print(url)
     response = requests.get(url)
     data=response.text
     data_dic=json.loads(data)
+    print(data_dic)
     address=data_dic['data']['movies'][0]['filmingLocations'][0]['location']
     title=data_dic['data']['movies'][0]['title']
     releaseDate=data_dic['data']['movies'][0]['releaseDate']

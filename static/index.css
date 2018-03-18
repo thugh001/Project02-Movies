@@ -34,3 +34,8 @@
         color: #eee;
         height: 8px;
     }
+
+    .map {
+        width: 100%;
+        height: 500px;
+    }
